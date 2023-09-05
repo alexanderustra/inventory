@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(50, 53, 53);
+    text-align: center;
+}
+main {
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    border-radius: 20px 20px;
+    width: 80%;
+    height: 900px;
+    background-color: rgb(204, 210, 216);
+}
+h1 ,h2{
+    font-family: 'Signika Negative', sans-serif;
+}
+h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+button {
+    width: 70px;
+    height: 30px;
+    border: none;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px 15px;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    overflow: auto;
+    width: 150px;
+}
+input  , select{
+    border: none;
+    outline: none;
+    border-radius: 5px 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(138, 137, 137);
+}
+input[type = checkbox] {
+    width: 20px;
+    height: 20px;
+}
+.unidad-div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 100%;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    height: 50px;
+    border-radius: 30px 30px;
+    background-color: rgb(216, 224, 233);
+    -webkit-box-shadow: 10px 7px 15px -5px rgba(0,0,0,0.64);
+    -moz-box-shadow: 10px 7px 15px -5px rgba(0,0,0,0.64);
+    box-shadow: 10px 7px 15px -5px rgba(0,0,0,0.64);
+}
+.p-input {
+    font-size: 25px;
+    color: white;
+}
+.caja-inp {
+    margin: auto;
+}
+.guia-parrafo {
+    font-style: italic;
+    font-size: 19px;
+}
+.oculto {
+    display: none;
+}
+#guia-container {
+    width: 100%;
+    margin: auto;
+}
+#guia-div {
+    display: flex;
+    flex-wrap: nowrap;
+    width:85%;
+    margin-left: 1%;
+}
+#main-container {
+    margin: auto;
+    width: 90%;
+    height: 550px;
+}
+#agregar-objeto {
+    margin-top: 15px;
+    width: 50px;
+    height: 40px;
+}
+#contenedor-btn {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#modal {
+    position: relative;
+    top: -30%;
+    border-radius: 20px 20px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    background-color:rgb(50, 53, 53);
+    display: none;
+}
+#guardar-btn {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+}
+#buscador {
+    margin-top: 10px;
+    width: 180px;
+}
+
+#estado-select {
+    border: none;
+    width: 100px;
+}

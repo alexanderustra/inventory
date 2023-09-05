@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Inventario Tienda</title>
+</head>
+<body>
+    <main>
+        <section id="main-container">
+            <h1>Inventario Componentes</h1>
+            <select name="filtro-categoría" id="filtro-categoria">
+                <option value="todo">Todo</option>
+                <option value="pc-armado">PC Armado</option>
+                <option value="laptop">Laptop</option>
+                <option value="procesador">Procesador</option>
+                <option value="tarjeta-grafica">Tarjeta gráfica</option>
+                <option value="memoria-ram">Memoria RAM</option>
+                <option value="disco-duro">Disco duro</option>
+                <option value="fuente-poder">Fuente de poder</option>
+                <option value="placa-madre">Placa madre</option>
+            </select>
+            <input type="text" id="buscador" placeholder="Buscador">
+
+            <div id="guia-container" class="unidad-div">
+                <div id="guia-div">
+                    <p class="guia-parrafo">Nombre</p>
+                    <p class="guia-parrafo">Categoría</p>
+                    <p class="guia-parrafo">ID</p>
+                    <p class="guia-parrafo">Cantidad</p>
+                    <p class="guia-parrafo">Costo</p>
+                    <p class="guia-parrafo">Precio</p>
+                    <p class="guia-parrafo">Estado</p>
+                </div>
+            </div>
+            
+            <section id="main" class="producto-container">
+                
+            </section>
+            <button id="agregar-objeto"><span class="material-symbols-outlined">
+                add
+                </span></button>
+        </section>
+        <section id="modal">
+            <h2>Crear Objeto</h2>
+            <div class="caja-inp">
+                <p class="p-input" >Nombre</p>
+            <input type="text" id="nombre-inp">
+            </div>
+            <div class="caja-inp">
+                <p class="p-input" >Categoría</p>
+                <select name="categoria-select" id="categoria-select">
+                    <option value="pc-armado">PC Armado</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="procesador">Procesador</option>
+                    <option value="tarjeta-grafica">Tarjeta gráfica</option>
+                    <option value="memoria-ram">Memoria RAM</option>
+                    <option value="disco-duro">Disco duro</option>
+                    <option value="fuente-poder">Fuente de poder</option>
+                    <option value="placa-madre">Placa madre</option>
+                </select>
+            </div>
+            <div class="caja-inp">
+                <p class="p-input" >Unidades</p>
+                <input type="number" id="unidades-inp">
+            </div>
+            <div class="caja-inp">
+                <p class="p-input" >Costo</p>
+                <input type="number" id="costo-inp">
+            </div>
+            <div class="caja-inp">
+                <p class="p-input" >Precio</p>
+                <input type="number" id="precio-inp">
+            </div>
+            <div class="caja-inp">
+                <p class="p-input" >Estado</p>
+                <select name="estado-select" id="estado-select">
+                    <option value="true">Activo</option>
+                    <option value="false">Desactivado</option>
+                </select>
+            </div>
+            <button id="guardar-btn">Guardar</button>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
